@@ -1,0 +1,32 @@
+@media (min-width: 32.5rem) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav #menu-button {
+    display: none;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #course-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .course-card {
+    padding: 1.5rem;
+  }
+
+  .course-card h3 {
+    font-size: 1.25rem;
+  }
+}

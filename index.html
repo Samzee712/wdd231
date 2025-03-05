@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Course home page for WDD 231 - Web Frontend Development.">
+  <meta name="author" content="Samuel David">
+  <meta name="keywords" content="WDD 231, Web Frontend Development, HTML, CSS, JavaScript">
+  <title>WDD 231 - Course Home Page</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 32.5rem)">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/profile.jpg" alt="Samuel David">
+    <h1>Samuel David</h1>
+    <p>Calabar, Nigeria</p>
+  </header>
+
+  <nav>
+    <button id="menu-button" aria-label="Toggle Menu">☰</button>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="https://github.com/Samzee712">GitHub Profile</a></li>
+      <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div id="course-filters">
+        <button data-filter="all" class="active-filter">All</button>
+        <button data-filter="cse">CSE</button>
+        <button data-filter="wdd">WDD</button>
+      </div>
+      <div id="course-list"></div>
+      <p class="credits">Total Credits: <span id="total-credits">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Samuel David | Calabar, Nigeria</p>
+    <p id="lastModified">Last Update: <span id="lastModifiedDate"></span></p>
+  </footer>
+</body>
+</html>
