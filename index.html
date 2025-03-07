@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Course home page for WDD 231 - Web Frontend Development.">
+  <meta name="description"
+    content="Samuel David's course home page for WDD 231 - Web Frontend Development at BYU-Idaho. Explore projects and assignments.">
   <meta name="author" content="Samuel David">
   <meta name="keywords" content="WDD 231, Web Frontend Development, HTML, CSS, JavaScript">
-  <title>WDD 231 - Course Home Page</title>
+  <title>WDD 231 - Web Frontend Development I | Samuel David</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css" media="(min-width: 32.5rem)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
   <header>
     <img src="images/profile.jpg" alt="Samuel David">
@@ -32,21 +37,44 @@
   </nav>
 
   <main>
-    <section class="certificate">
-      <h2>Web and Computer Programming Certificate</h2>
-      <div id="course-filters">
-        <button data-filter="all" class="active-filter">All</button>
-        <button data-filter="cse">CSE</button>
-        <button data-filter="wdd">WDD</button>
-      </div>
-      <div id="course-list"></div>
-      <p class="credits">Total Credits: <span id="total-credits">0</span></p>
-    </section>
-  </main>
+    <main>
+      <h1>WDD 231: Web Frontend Development I | Samuel David</h1>
+      <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div id="course-filters">
+          <button data-filter="all" class="active-filter">All</button>
+          <button data-filter="cse">CSE</button>
+          <button data-filter="wdd">WDD</button>
+        </div>
+        <div id="course-list"></div>
+        <p class="credits">Total Credits: <span id="total-credits">0</span></p>
+      </section>
 
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Samuel David | Calabar, Nigeria</p>
-    <p id="lastModified">Last Update: <span id="lastModifiedDate"></span></p>
-  </footer>
+      <section class="about">
+        <h2>About Me</h2>
+        <p>I'm Samuel David, a passionate web development student at BYU-Idaho pursuing a degree in Software Development with an emphasis on frontend technologies. Born and raised in Calabar, Nigeria, I've always been fascinated by the intersection of technology and creative design.</p>
+      
+        <p>Currently enrolled in WDD 231: Web Frontend Development I, I'm deepening my skills in HTML, CSS, and JavaScript while exploring responsive design principles and modern web practices. My academic journey has helped me develop strong foundations in building accessible, user-friendly web interfaces.</p>
+      
+        <p>When I'm not coding, you'll find me contributing to open-source projects on GitHub or exploring new JavaScript frameworks. I recently built a community resource platform for local farmers in Nigeria using vanilla JavaScript and the Mapbox API, which taught me valuable lessons about real-world problem solving through code.</p>
+      
+        <p>My long-term goal is to specialize in creating progressive web applications that bridge the digital divide in developing nations. I believe well-designed technology can be a powerful tool for social change and economic empowerment.</p>
+      
+        <p>Outside of tech, I enjoy hiking the beautiful trails of Cross River State, experimenting with food photography, and mentoring young aspiring developers in my community through weekend coding workshops.</p>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sdavid1@byupathway.edu">My school Email</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com">My LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/Samzee712">Github</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Samuel David | Calabar, Nigeria</p>
+      <p id="lastModified">Last Update: <span id="lastModifiedDate"></span></p>
+    </footer>
 </body>
+
 </html>
