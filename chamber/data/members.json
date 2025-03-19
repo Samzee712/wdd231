@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Nigerian Breweries Plc",
+      "address": "1, Abebe Village Road, Iganmu, Lagos, State",
+      "phone": "+234-1-2717400 2734",
+      "website": "https://www.nbplc.com/",
+    "imageurl": "https://images.seeklogo.com/logo-png/49/2/nigerian-breweries-logo-png_seeklogo-491557.png",
+      "membership": 1
+    },
+    {
+      "name": "Dangote Industries Limited",
+      "address": "Leadway Marble House 1 Alfred Rewane Road, PMB 40032, Falomo Ikoyi, Lagos, Nigeria",
+      "phone": "+234 1 448 0815, +234 1 448 0816 ",
+      "website": "https://www.dangote.com",
+      "imageurl": "https://images.seeklogo.com/logo-png/31/1/dangote-logo-png_seeklogo-314430.png?v=1956426018416065904",
+      "membership": 2
+    },
+    {
+      "name": "Bua Food Plc",
+      "address": "3rd Floor BUA Towers, PC 32, Churchgate Street, Victoria Island, Lagos, Nigeria",
+      "phone": "+234 1 461 0669 , +234 1 262 3535",
+      "website": "https://www.buafoodsplc.com/",
+      "imageurl": "https://seeklogo.com/images/B/bua-logo-40D30B68E1-seeklogo.com.png",
+      "membership": 1
+    },
+    {
+      "name": "Airtel Network Limited",
+      "address": "Plot L2, 401 Close Banana Island, Ikoyi Lagos, Nigeria",
+      "phone": "+234 802 192 1500",
+      "website": "https://airtel.africa/ng/",
+      "imageurl": "https://images.seeklogo.com/logo-png/30/2/airtel-logo-png_seeklogo-305383.png?v=1956419321561541848",
+      "membership": 3
+    },
+    {
+      "name": "Seplat Energy PLC",
+      "address": "16A Temple Road Ikoyi Lagos Nigeria",
+      "phone": " +234 1277 0400",
+      "website": "https://www.seplatenergy.com",
+      "imageurl": "https://th.bing.com/th/id/OIP.s3INr82qLv9sbAIS_ZnzxgHaFj?w=235&h=180&c=7&r=0&o=5&pid=1.7",
+      "membership": 2
+    },
+    {
+      "name": "Guaranty Trust Holding Company Plc",
+      "address": "Head Office Address Plot 635, Akin Adesola Victoria Island, Lagos.",
+      "phone": "+234 201 271 4580 , +234 201 271 5227",
+      "website": "https://www.gtbank.com",
+      "imageurl": "https://images.seeklogo.com/logo-png/6/2/guaranty-bank-and-trust-company-logo-png_seeklogo-64016.png",
+      "membership": 1
+    },
+    {
+      "name": "Zenith Bank Plc",
+      "address": "Plot 84, Ajose Adeogun Street, Victoria Island Lagos, Nigeria.",
+      "phone": "+234 904-085-7000,",
+      "website": "https://www.zenithbank.com",
+      "imageurl": "https://images.seeklogo.com/logo-png/31/2/zenith-bank-logo-png_seeklogo-316671.png",
+      "membership": 3
+    }
+  ]
+  
