@@ -187,6 +187,36 @@ nav ul li a.active::after {
   color: #3498db;
 }
 
+/* Styles for the highlighted upcoming event */
+.highlight-event {
+  background-color: #f8d775; /* Warm yellow background to grab attention */
+  border-left: 6px solid #d4a017; /* A bold accent on the left */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  animation: pulse 1.5s infinite alternate; /* Subtle pulse effect */
+}
+
+/* Optional: Pulse animation for a soft glow effect */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.02); }
+}
+
+/* Ensure event items have consistent styling */
+.event-item {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.event-item:hover {
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+
 /* Weather Section */
 .weather {
   text-align: center;
@@ -207,42 +237,195 @@ nav ul li a.active::after {
   transform: translateX(-50%);
 }
 
-/* Spotlights */
-.spotlights {
-  padding: 20px;
-  background-color: white;
-  text-align: center;
-}
-
-.spotlights h2::before {
-  content: "✨ ";
-  color: #e67e22;
-}
-
+/* Spotlight Section */
 #spotlight-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
   padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
 }
 
+/* Member Card */
 .member-card {
-  background-color: white;
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  position: relative;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.member-card::before {
-  content: "🏆";
-  font-size: 2em;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
+.member-card:hover {
+  transform: scale(1.05);
 }
+
+/* Member Logo */
+.member-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Member Name */
+.member-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Member Info */
+.member-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Membership Level Badge */
+.membership-level {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+/* Gold Member Styling */
+.membership-level:contains("Gold") {
+  background-color: #ffd700;
+  color: #333;
+}
+
+/* Silver Member Styling */
+.membership-level:contains("Silver") {
+  background-color: #c0c0c0;
+  color: #333;
+}
+
+/* General Styling for Directory */
+#members-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Member Card (Default Grid View) */
+.member-card {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+}
+
+/* Member Image */
+.member-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Member Name */
+.member-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Member Details */
+.member-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Website Link */
+.member-card a {
+  display: block;
+  color: #0073e6;
+  font-weight: bold;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* Grid View */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* List View */
+.list {
+  display: block;
+}
+
+.list .member-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+}
+
+.list .member-card img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.view-toggle button {
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-toggle button:hover {
+  background-color: #005bb5;
+}
+
+.view-toggle button.active {
+  background-color: #ff9800;
+}
+
 
 /* Footer */
 footer {
