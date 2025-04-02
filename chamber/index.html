@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Timbuktu Chamber of Commerce - Supporting local business and economic growth in Timbuktu. Discover community events, local weather, and member spotlights.">
+  <meta name="author" content="Samuel David">
+  <meta name="keywords" content="Chamber of Commerce, Timbuktu, Home, Local Business, Economic Growth">
+  <title>Timbuktu Chamber of Commerce | Home</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Timbuktu Chamber of Commerce | Home">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://samzee712.github.io/wdd231/chamber/images/social-preview.jpg">
+  <meta property="og:url" content="https://samzee712.github.io/wdd231/chamber/index.html">
+  <meta property="og:description" content="Discover local business opportunities, events, and weather updates in Timbuktu through the Timbuktu Chamber of Commerce.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <!-- Custom CSS for Chamber Pages -->
+  <link rel="stylesheet" href="styles/directory.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- JavaScript (if needed, you may add additional scripts for the homepage weather and spotlights) -->
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/events.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+  <script src="../scripts/navigation.js" defer></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <img src="images/chamber-logo.jpg" alt="Timbuktu Chamber Logo">
+    <div class="header-text">
+      <p>Promoting local business & economic growth</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <button id="menu-button" aria-label="Toggle Menu">☰ Menu</button>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="../chamber/images/Hero-image.jpeg" alt="Community in Timbuktu" class="hero-image">
+      <div class="hero-content">
+        <h1>Welcome to the Timbuktu Chamber of Commerce</h1>
+        <p>Your hub for local business resources and community growth.</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current Events Section -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div id="events-container">
+        <!-- Events content to be injected via JavaScript or added manually -->
+        <p>No events scheduled at this time.</p>
+      </div>
+    </section>
+
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <p><strong>City:</strong> <span id="city-name"></span></p>
+      <p><strong>Date & Time:</strong> <span id="current-date-time"></span></p>
+      <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+      <img id="weather-icon" src="" alt="Weather Icon">
+      <p id="weather-description"></p>
+  </section>
+  
+    
+
+    <!-- Member Spotlights Section -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container">
+        <!-- Random spotlight member cards (gold and silver members) will be injected here -->
+        <p>Loading featured businesses...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Samuel David | WDD 231</p>
+    <p id="lastModified"></p>
+    <p>Contact: samiwizee@gmail.com</p>
+  </footer>
+
+  
+</body>
+
+</html>
