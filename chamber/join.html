@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Timbuktu Chamber of Commerce to boost your business and network with local industry leaders.">
+  <meta name="author" content="Samuel David">
+  <title>Join the Chamber</title>
+
+  <!-- Open Graph Meta Tags (optional if used uniformly) -->
+  <meta property="og:title" content="Join the Timbuktu Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://samzee712.github.io/wdd231/chamber/images/social-preview.jpg">
+  <meta property="og:url" content="https://samzee712.github.io/wdd231/chamber/join.html">
+  <meta property="og:description" content="Apply to join the Timbuktu Chamber of Commerce and unlock exclusive business benefits.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <!-- Custom CSS for Join Page -->
+  <link rel="stylesheet" href="../chamber/styles/join.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- JavaScript Files -->
+  <script src="../chamber/scripts/join.js" defer></script>
+  <script src="../scripts/navigation.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="images/chamber-logo.jpg" alt="Timbuktu Chamber Logo">
+    <div class="header-text">
+      <p>Promoting local business & economic growth</p>
+    </div>
+  </header>
+
+  <nav>
+    <button id="menu-button" aria-label="Toggle Menu">☰ Menu</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Form Section -->
+    <section class="form-section" aria-labelledby="form-title">
+      <h1 id="form-title">Join the Chamber of Commerce</h1>
+      <form action="thankyou.html" method="get">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required autocomplete="given-name">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required autocomplete="family-name">
+
+        <label for="organization-title">Organization Title:</label>
+        <input type="text" id="organization-title" name="organization-title" pattern="[A-Za-z -]{7,}" title="Only letters, hyphens, and spaces allowed">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com">
+
+        <label for="phone">Mobile Phone:</label>
+        <input type="tel" id="phone" name="phone" required autocomplete="tel">
+
+        <label for="business-name">Business Name:</label>
+        <input type="text" id="business-name" name="business-name" required autocomplete="organization">
+
+        <fieldset>
+          <legend>Membership Level</legend>
+          <label><input type="radio" name="membership" value="np" required> NP (Non-Profit)</label>
+          <label><input type="radio" name="membership" value="bronze"> Bronze</label>
+          <label><input type="radio" name="membership" value="silver"> Silver</label>
+          <label><input type="radio" name="membership" value="gold"> Gold</label>
+        </fieldset>
+
+        <label for="business-description">Business Description:</label>
+        <textarea id="business-description" name="business-description"></textarea>
+
+        <!-- Hidden timestamp auto-filled via JS -->
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit">Join Now</button>
+      </form>
+    </section>
+
+    <!-- Membership Level Section -->
+    <section class="membership-section">
+      <h2>Membership Levels</h2>
+      <div class="membership-cards">
+        <div class="card fade-slide" id="np-card">
+          <h3>Non-Profit</h3>
+          <p>Free membership for registered non-profits.</p>
+          <button onclick="openModal('np-modal')">More Info</button>
+        </div>
+        <div class="card fade-slide" id="bronze-card">
+          <h3>Bronze</h3>
+          <p>Affordable entry-level membership.</p>
+          <button onclick="openModal('bronze-modal')">More Info</button>
+        </div>
+        <div class="card fade-slide" id="silver-card">
+          <h3>Silver</h3>
+          <p>More benefits for growing businesses.</p>
+          <button onclick="openModal('silver-modal')">More Info</button>
+        </div>
+        <div class="card fade-slide" id="gold-card">
+          <h3>Gold</h3>
+          <p>Exclusive perks and advertising.</p>
+          <button onclick="openModal('gold-modal')">More Info</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for Membership Details -->
+    <!-- NP Modal -->
+    <div class="modal" id="np-modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <span class="close" tabindex="0" onclick="closeModal('np-modal')">&times;</span>
+        <h3>Non-Profit Membership</h3>
+        <p>Free membership for registered non-profits. Benefits include networking, training, and community events.</p>
+      </div>
+    </div>
+
+    <!-- Bronze Modal -->
+    <div class="modal" id="bronze-modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <span class="close" tabindex="0" onclick="closeModal('bronze-modal')">&times;</span>
+        <h3>Bronze Membership</h3>
+        <p>Basic membership with event discounts and business directory listing.</p>
+      </div>
+    </div>
+
+    <!-- Silver Modal -->
+    <div class="modal" id="silver-modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <span class="close" tabindex="0" onclick="closeModal('silver-modal')">&times;</span>
+        <h3>Silver Membership</h3>
+        <p>Includes advertising, premium directory placement, and VIP event access.</p>
+      </div>
+    </div>
+
+    <!-- Gold Modal -->
+    <div class="modal" id="gold-modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <span class="close" tabindex="0" onclick="closeModal('gold-modal')">&times;</span>
+        <h3>Gold Membership</h3>
+        <p>Exclusive benefits, spotlight positions on the homepage, and premium business promotion.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Samuel David | WDD 231</p>
+    <p id="lastModified"></p>
+    <p>Contact: samiwizee@gmail.com</p>
+  </footer>
+</body>
+</html>

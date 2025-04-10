@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-  background-color: #1f3b5c;
+  background-color: #0F2A3F;
   color: white;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #F8F9FA;
   text-decoration: none;
   font-weight: 900;
   padding: 5px 10px;
@@ -160,8 +160,8 @@ nav ul li a.active::after {
 }
 
 .cta-button {
-  background-color: #ffcc00;
-  color: #1f3b5c;
+  background-color: #FFD700;
+  color: #0F2A3F;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -220,7 +220,7 @@ nav ul li a.active::after {
 /* Weather Section */
 .weather {
   text-align: center;
-  background-color: #1B4F72;
+  background-color: #0F364D;
   color: white;
   padding: 20px;
   margin: 20px auto;
@@ -431,7 +431,7 @@ nav ul li a.active::after {
 footer {
   background-color: #1f3b5c;
   text-align: center;
-  color: #ffffff;
+  color: #F8F9FA;
   padding: 10px;
   margin-top: 20px;
 }
