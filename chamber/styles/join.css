@@ -144,7 +144,7 @@ main {
 .form-section input,
 .form-section textarea,
 .form-section select {
-    width: 100% auto;
+    width: auto;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
