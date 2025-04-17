@@ -37,4 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch (error) {
     console.error('Visit tracking error:', error);
   }
+   // Add a class to visitor messages containing "Welcome"
+   document.querySelectorAll('.visitor-message p').forEach(message => {
+    if (message.textContent.includes('Welcome')) {
+      message.parentElement.classList.add('welcome-message');
+    }
+  });
 });

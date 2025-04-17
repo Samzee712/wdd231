@@ -297,18 +297,6 @@ nav ul li a.active::after {
   text-transform: uppercase;
 }
 
-/* Gold Member Styling */
-.membership-level:contains("Gold") {
-  background-color: #ffd700;
-  color: #333;
-}
-
-/* Silver Member Styling */
-.membership-level:contains("Silver") {
-  background-color: #c0c0c0;
-  color: #333;
-}
-
 /* General Styling for Directory */
 #members-container {
   display: flex;
@@ -455,4 +443,15 @@ footer {
   nav ul li {
       margin: 10px 0;
   }
+}
+
+/* Updated CSS */
+.gold-member {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.silver-member {
+  background-color: #c0c0c0;
+  color: #333;
 }

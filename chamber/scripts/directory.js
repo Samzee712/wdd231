@@ -104,4 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const lastModified = new Date(document.lastModified);
   document.getElementById('lastModified').textContent =
     `Last Updated: ${lastModified.toLocaleDateString()} at ${lastModified.toLocaleTimeString()}`;
+
+  // Add a class to membership levels based on their content
+  document.querySelectorAll('.membership-level').forEach(level => {
+    if (level.textContent.includes('Gold')) {
+      level.classList.add('gold-member');
+    } else if (level.textContent.includes('Silver')) {
+      level.classList.add('silver-member');
+    }
+  });
 });
