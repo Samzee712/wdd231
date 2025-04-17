@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Timbuktu Chamber of Commerce - Supporting local business and economic growth in Timbuktu. Discover community events, local weather, and member spotlights.">
+  <meta name="author" content="Samuel David">
+  <meta name="keywords" content="Chamber of Commerce, Timbuktu, Home, Local Business, Economic Growth">
+  <title>Discover | Timbuktu Chamber of Commerce</title>
+
+  <meta property="og:title" content="Timbuktu Chamber of Commerce | Home">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://samzee712.github.io/wdd231/chamber/images/chamber-logo.jpg">
+  <meta property="og:url" content="https://samzee712.github.io/wdd231/chamber/index.html">
+  <meta property="og:description" content="Discover local business opportunities, events, and weather updates in Timbuktu through the Timbuktu Chamber of Commerce.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <!-- Custom CSS for Chamber Pages -->
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/discover.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../chamber/scripts/lastvisit.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/chamber-logo.jpg" alt="Timbuktu Chamber Logo">
+    <div class="header-text">
+      <h1>Discover Timbuktu</h1>
+      <p>Explore our vibrant community</p>
+    </div>
+  </header>
+
+  <nav>
+    <button id="menu-button" aria-label="Toggle Menu">☰ Menu</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html" class="active">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+
+ 
+  <!-- Visitor Sidebar -->
+<!-- Add this where you want the message to appear -->
+<aside id="visitor-message" class="visitor-message" aria-live="polite">
+  <!-- Message will be inserted here by JavaScript -->
+  <button class="close-message" aria-label="Close message">×</button>
+</aside>
+  <!-- Main Content -->
+  <main class="discover-grid">
+    
+    <!-- Demographics -->
+    <section class="demographics">
+      <h2>Timbuktu Demographics</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Population</h3>
+          <p>54,453</p>
+        </div>
+        <div class="stat-card">
+          <h3>Median Age</h3>
+          <p>32.5 years</p>
+        </div>
+        <div class="stat-card">
+          <h3>Median Income</h3>
+          <p>$48,750</p>
+        </div>
+        <div class="stat-card">
+          <h3>Businesses</h3>
+          <p>1,200+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Points of Interest -->
+    <section class="gallery" id="points-of-interest">
+      <h2>Local Attractions</h2>
+      <div class="cards-container" id="attractions-container">
+        <!-- Cards will be populated by JavaScript -->
+      </div>
+    </section>
+    
+    <section class="cards" id="attractions-container">
+      <!-- Attraction cards will be injected here -->
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Samuel David | WDD 231</p>
+    <p id="lastModified"></p>
+    <p>Contact: samiwizee@gmail.com</p>
+  </footer>
+</body>
+</html>

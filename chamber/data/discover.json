@@ -1,0 +1,52 @@
+{
+  "attractions": [
+    {
+      "name": "Marina Resort",
+      "address": "Duke Town, Calabar, Nigeria.",
+      "description": "A scenic waterfront resort featuring a slave history museum, restaurants, and boat rides, perfect for relaxation and family outings.",
+      "image": "images/marina-resort.webp"
+    },
+    {
+      "name": "Obudu Ranch Resort",
+      "address": "Obudu Plateau, Cross River, Nigeria.",
+      "description": "A breathtaking mountain resort known for its cable cars, cool climate, and panoramic views of nature and wildlife.",
+      "image": "images/obudu-ranch.webp"
+    },
+    {
+      "name": "Flour Mills of Nigeria",
+      "address": "1 Golden Penny Place, Wharf Road, Apapa, Lagos State, Nigeria.",
+      "description": "A major agro-allied business hub producing Golden Penny foods and supporting Nigeria’s food supply chain.",
+      "image": "images/flour-mills.webp"
+    },
+    {
+      "name": "Tinapa Resort",
+      "address": "Ikang Rd, University Satellite, Calabar, Nigeria.",
+      "description": "A business and leisure resort with retail shops, cinemas, restaurants, and entertainment facilities near the Calabar River.",
+      "image": "images/tinapa-resort.webp"
+    },
+    {
+      "name": "Dangote Industries Limited",
+      "address": "Leadway Marble House, 1 Alfred Rewane Road, PMB 40032, Falomo Ikoyi, Lagos, Nigeria.",
+      "description": "Nigeria’s largest industrial conglomerate with businesses in cement, sugar, salt, and petroleum refining.",
+      "image": "images/dangote.webp"
+    },
+    {
+      "name": "Nigerian Breweries Plc",
+      "address": "1 Abebe Village Road, Iganmu, Lagos State, Nigeria.",
+      "description": "The pioneer and largest brewing company in Nigeria, home to iconic beverages like Star and Amstel Malta.",
+      "image": "images/nigerian-breweries.webp"
+    },
+    {
+      "name": "Calabar International Convention Centre",
+      "address": "Summit Hills, Off Murtala Mohammed Highway, Calabar, Nigeria.",
+      "description": "A state-of-the-art event venue for conferences, exhibitions, and large gatherings with a striking architectural design.",
+      "image": "images/conventional.webp"
+    },
+    {
+      "name": "Nigeria World Trade Center",
+      "address": "1008, 1113 Constitution Ave, Central Business District, Abuja, Nigeria.",
+      "description": "A modern skyscraper complex offering office spaces, conference halls, and international trade opportunities in Nigeria’s capital.",
+      "image": "images/trade-center.webp"
+    }
+  ]
+}

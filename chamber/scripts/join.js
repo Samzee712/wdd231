@@ -25,7 +25,7 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
-// Auto-fill timestamp when page loads
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("timestamp").value = new Date().toISOString();
-});
+// In join.html
+document.querySelector('form').addEventListener('submit', function() {
+    document.getElementById('timestamp').value = Date.now();
+  });

@@ -1,0 +1,177 @@
+/* ========== DISCOVER PAGE LAYOUT ========== */
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "visitor"
+    "demographics"
+    "gallery";
+  gap: 2rem;
+  padding: 1rem;
+}
+/* VISITOR SIDEBAR STYLES */
+/* Visitor Message Styles */
+.visitor-message {
+  background-color: #e9f5ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  position: relative;
+  border-left: 4px solid #0F2A3F;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.visitor-message p {
+  margin: 0;
+  color: #0F2A3F;
+  font-weight: 500;
+  padding-right: 2rem; /* Space for close button */
+}
+
+.close-message {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+  padding: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-message:hover {
+  color: #d32f2f;
+  background: rgba(0,0,0,0.05);
+  border-radius: 50%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.visitor-message {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* First visit highlight */
+.visitor-message:has(p:contains("Welcome")) {
+  background-color: #e3f2fd;
+  border-left: 4px solid #FFD700;
+}
+/* Demographics Section */
+.demographics {
+  grid-area: demographics;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Gallery Section */
+.gallery {
+  grid-area: gallery;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.attraction-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.attraction-card:hover {
+  transform: translateY(-5px);
+}
+
+.attraction-card figure {
+  margin: 0;
+  position: relative;
+}
+
+.attraction-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* ✅ Proper hover effect for images */
+.attraction-card:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.attraction-card h2 {
+  margin: 1rem 1rem 0.5rem;
+  color: #0F2A3F;
+}
+
+.attraction-card address {
+  margin: 0 1rem;
+  font-style: normal;
+  color: #555;
+}
+
+.attraction-card p {
+  margin: 1rem;
+  color: #333;
+}
+
+.attraction-card button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0F2A3F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Medium Screens (641px-1024px) */
+@media (min-width: 641px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Screens (1025px+) */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-areas:
+      "visitor visitor"
+      "demographics demographics"
+      "gallery gallery";
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
